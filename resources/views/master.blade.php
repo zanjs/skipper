@@ -207,8 +207,10 @@ $menuExpanded = isset($_COOKIE['expandedMenu']) && $_COOKIE['expandedMenu'] == 1
 </div>
 <footer class="app-footer">
     <div class="site-footer-right">
-        Made with <i class="skipper-heart"></i> by <a href="http://thecontrolgroup.com" target="_blank">The Control
-            Group</a>
+        Design with <i class="skipper-heart"></i>
+         by <a href="http://zanjs.com" target="_blank">
+         Anla sheng
+         </a>
     </div>
 </footer>
 <!-- Javascript Libs -->

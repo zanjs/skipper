@@ -28,7 +28,7 @@ return [
     */
 
     'routes' => [
-        'prefix' => 'admin',
+        'prefix' => 'skipper',
     ],
 
     /*

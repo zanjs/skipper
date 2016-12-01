@@ -63,7 +63,7 @@ class SettingsTableSeeder extends Seeder
                 'id'           => 9,
                 'key'          => 'admin_description',
                 'display_name' => 'Admin Description',
-                'value'        => 'Welcome to Skipper. The Missing Admin for Laravel',
+                'value'        => 'Welcome to Skipper. Let us explore together',
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 5,
