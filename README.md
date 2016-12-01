@@ -4,7 +4,7 @@ Laravel Admin & BREAD System (Browse, Read, Edit, Add, & Delete), made for Larav
 After creating your new Laravel application you can include the Skipper package with the following command: 
 
 ```bash
-composer require anla/skipper
+composer require anla/skipper dev-master
 ```
 
 Next make sure to create a new database and add your database credentials to your .env file:
