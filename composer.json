@@ -1,0 +1,38 @@
+{
+    "name": "anla/skipper",
+    "description": "A Laravel Admin Package for The Anla Sheng to make your life easier and steer your project in the right direction",
+    "keywords": ["laravel", "admin", "panel"],
+    "license": "MIT",
+    "homepage": "https://zanjs.github.io/skipper/",
+    "support": {
+        "issues": "https://github.com/zanjs/skipper/issues",
+        "source": "https://github.com/zanjs/skipper"
+    },
+    "authors": [
+        {
+            "name": "Anla sheng",
+            "email": "anlasheng@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.3.*",
+        "intervention/image": "^2.3",
+        "doctrine/dbal": "^2.5"
+    },
+    "require-dev": {
+        "phpunit/phpcov": "~3.0",
+        "phpunit/phpunit": "~5.0",
+        "orchestra/testbench": "~3.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anla\\Skipper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Anla\\Skipper\\Tests\\": "tests/"
+      }
+    },
+    "minimum-stability": "stable"
+}
