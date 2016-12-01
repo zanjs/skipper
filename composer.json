@@ -1,6 +1,6 @@
 {
     "name": "anla/skipper",
-    "description": "A Laravel Admin Package for The Anla Sheng to make your life easier and steer your project in the right direction",
+    "description": "A Laravel Admin Package",
     "keywords": ["laravel", "admin", "panel"],
     "license": "MIT",
     "homepage": "https://zanjs.github.io/skipper/",
