@@ -9,8 +9,6 @@
     <title>skipper Login</title>
     {{-- Skipper CSS --}}
     <link rel="stylesheet" href="{{ config('skipper.assets_path') }}/css/skipper.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">
-    <link href="https://file.myfontastic.com/QLbQY2QVvDNQgGeBRf7fWh/icons.css" rel="stylesheet">
     <style>
         .login-page {
             background-image: url('{{ Skipper::image( Skipper::setting("admin_bg_image"), config('skipper.assets_path') . "/images/bg.jpg" ) }}');
