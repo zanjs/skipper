@@ -47,7 +47,7 @@ php artisan db:seed
 
 And we're all good to go! 
 
-Start up a local development server with `php artisan serve` And, visit http://localhost:8000/admin and you can login with the following login credentials:
+Start up a local development server with `php artisan serve` And, visit http://localhost:8000/skipper and you can login with the following login credentials:
 
 ```
 **email:** z@z.com
