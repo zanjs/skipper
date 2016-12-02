@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html class="no-js css-menubar" lang="en">
+<html class="no-js css-menubar" lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta name="description" content="admin login">
     <meta name="author" content="">
-    <title>Admin Login</title>
+    <title>skipper Login</title>
     {{-- Skipper CSS --}}
     <link rel="stylesheet" href="{{ config('skipper.assets_path') }}/css/skipper.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">
     <link href="https://file.myfontastic.com/QLbQY2QVvDNQgGeBRf7fWh/icons.css" rel="stylesheet">
-
     <style>
         .login-page {
             background-image: url('{{ Skipper::image( Skipper::setting("admin_bg_image"), config('skipper.assets_path') . "/images/bg.jpg" ) }}');
@@ -199,7 +198,7 @@
         <img class="logo-img" src="{{ config('skipper.assets_path') }}/images/logo-icon-light.png" alt="Admin Login">
         <div class="copy">
             <h1>{{ Skipper::setting('admin_title', 'Skipper') }}</h1>
-            <p>{{ Skipper::setting('admin_description', 'Welcome to Skipper. The Missing Admin for Laravel') }}</p>
+            <p>{{ Skipper::setting('admin_description', 'Welcome to Skipper.') }}</p>
         </div>
         <div style="clear:both"></div>
     </div>
@@ -207,22 +206,22 @@
     <div id="login_section">
         <div class="content">
             <h2>Sign In</h2>
-            <p>Sign in below:</p>
+            <p>输入完按回车登陆哦:</p>
             <div style="clear:both"></div>
             <form action="{{ route('skipper.login') }}" method="POST" id="login">
                 {{ csrf_field() }}
-                <input type="text" class="form-control" name="email" placeholder="email address" value="{{ old('email') }}">
-                <input type="password" class="form-control" name="password" placeholder="password">
+                <input type="text" class="form-control" name="email" placeholder="账号" value="{{ old('email') }}">
+                <input type="password" class="form-control" name="password" placeholder="密码">
                 <button class="btn btn-primary btn-login" id="skipper-login-btn">
-                    <span class="login_text"><i class="skipper-lock"></i> Login</span>
+                    <span class="login_text"><i class="skipper-lock"></i> 登陆</span>
                     <span class="login_loader">
-                        <img class="btn-loading" src="{{ config('skipper.assets_path') }}/images/logo-icon-light.png"> Logging in
+                        <img class="btn-loading" src="{{ config('skipper.assets_path') }}/images/logo-icon-light.png"> 登陆中...
                     </span>
                 </button>
             </form>
             @if (count($errors))
                 <div class="error-login">
-                    The given credentials don't match with an user registered.
+                    遇到错误了,请查看输入正确吗？
                 </div>
             @endif
         </div>
