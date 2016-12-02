@@ -170,8 +170,8 @@
 
     <div class="container-fluid">
         <div class="alert alert-info">
-            <strong>How To Use:</strong>
-            <p>You can get the value of each setting anywhere on your site by calling <code>Skipper::setting('key')</code></p>
+            <strong>如何使用:</strong>
+            <p>您可以在网站上任意位置 通过调用 <code>Skipper::setting('key')</code> 获取的每个设置的值</p>
         </div>
     </div>
 
@@ -301,7 +301,7 @@
                         <div class="new-settings-options">
                             <label for="options">选项
                                 <small>
-                                    选项（可选，仅适用于某些类型，如下拉框或单选按钮）
+                                    可选，仅适用于某些类型，如下拉框或单选按钮 
                                 </small>
                             </label>
                             <textarea name="details" id="options_textarea" class="form-control"></textarea>
