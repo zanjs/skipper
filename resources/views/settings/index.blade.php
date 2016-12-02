@@ -162,7 +162,7 @@
 
 @section('page_header')
     <h1 class="page-title">
-        <i class="skipper-settings"></i> Settings
+        <i class="skipper-settings"></i> 网站设置
     </h1>
 @stop
 
@@ -262,7 +262,7 @@
                     @endif
                 @endforeach
             </div>
-            <button type="submit" class="btn btn-primary pull-right">Save Settings</button>
+            <button type="submit" class="btn btn-primary pull-right">保存设置</button>
         </form>
 
         <div style="clear:both"></div>
@@ -270,7 +270,7 @@
         <div class="panel" style="margin-top:10px;">
             <div class="panel-heading new-setting">
                 <hr>
-                <h3 class="panel-title"><i class="skipper-plus"></i> New Setting</h3>
+                <h3 class="panel-title"><i class="skipper-plus"></i> 新设置</h3>
             </div>
             <div class="panel-body">
                 <form action="{{ route('skipper.settings.create') }}" method="POST">
@@ -299,13 +299,14 @@
                     <div class="col-md-12">
                         <a id="toggle_options"><i class="skipper-double-down"></i> OPTIONS</a>
                         <div class="new-settings-options">
-                            <label for="options">Options
-                                <small>(optional, only applies to certain types like dropdown box or radio button)
+                            <label for="options">选项
+                                <small>
+                                    选项（可选，仅适用于某些类型，如下拉框或单选按钮）
                                 </small>
                             </label>
                             <textarea name="details" id="options_textarea" class="form-control"></textarea>
-                            <div id="valid_options" class="alert-success alert" style="display:none">Valid Json</div>
-                            <div id="invalid_options" class="alert-danger alert" style="display:none">Invalid Json</div>
+                            <div id="valid_options" class="alert-success alert" style="display:none">有效 Json</div>
+                            <div id="invalid_options" class="alert-danger alert" style="display:none">无效 Json</div>
                         </div>
                     </div>
                     <script>
@@ -351,7 +352,7 @@
                     </script>
                     <div style="clear:both"></div>
                     <button type="submit" class="btn btn-primary pull-right new-setting-btn">
-                        <i class="skipper-plus"></i> Add New Setting
+                        <i class="skipper-plus"></i> 添加新的设置
                     </button>
                     <div style="clear:both"></div>
                 </form>
@@ -367,16 +368,16 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <h4 class="modal-title">
-                        <i class="skipper-trash"></i> Are you sure you want to delete the <span id="delete_setting_title"></span> Setting?
+                        <i class="skipper-trash"></i> 您确定要删除 <span id="delete_setting_title"></span> Setting?
                     </h4>
                 </div>
                 <div class="modal-footer">
                     <form action="{{ route('skipper.settings') }}" id="delete_form" method="POST">
                         {{ csrf_field() }}
                         <input type="hidden" name="_method" value="DELETE">
-                        <input type="submit" class="btn btn-danger pull-right delete-confirm" value="Yes, Delete This Setting">
+                        <input type="submit" class="btn btn-danger pull-right delete-confirm" value="是，删除此设置">
                     </form>
-                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal">取消</button>
                 </div>
             </div>
         </div>
