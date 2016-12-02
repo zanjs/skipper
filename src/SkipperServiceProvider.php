@@ -59,7 +59,7 @@ class SkipperServiceProvider extends ServiceProvider
         if (!$this->app->routesAreCached()) {
             $router->group([
                 'prefix'    => config('skipper.routes.prefix', 'admin'),
-                'namespace' => 'Anla\\Skipper\\Http\\Controllers',
+                'namespace' => config('skipper.controllers.namespace', 'Anla\\Skipper\\Http\\Controllers'),
             ], function () {
                 require __DIR__.'/../routes/web.php';
             });
@@ -104,5 +104,6 @@ class SkipperServiceProvider extends ServiceProvider
     private function registerCommands()
     {
         $this->commands(Commands\InstallCommand::class);
+        $this->commands(Commands\ControllersCommand::class);
     }
 }

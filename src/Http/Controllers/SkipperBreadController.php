@@ -225,27 +225,28 @@ class SkipperBreadController extends Controller
     public function insertUpdateData($request, $slug, $rows, $data)
     {
         $rules = [];
+        $messages = [];
 
         foreach ($rows as $row) {
             $options = json_decode($row->details);
-            if (isset($options->rule)) {
-                $rules[$row->field] = $options->rule;
+            if (isset($options->validation)) {
+                if (isset($options->validation->rule)) {
+                    $rules[$row->field] = $options->validation->rule;
+                }
+                if (isset($options->validation->messages)) {
+                    foreach ($options->validation->messages as $key => $msg) {
+                        $messages[$row->field.'.'.$key] = $msg;
+                    }
+                }
             }
 
             $content = $this->getContentBasedOnType($request, $slug, $row);
-            if ($content === null) {
-                if (isset($data->{$row->field})) {
-                    $content = $data->{$row->field};
-                }
-                if ($row->field == 'password') {
-                    $content = $data->{$row->field};
-                }
-            }
+            
 
             $data->{$row->field} = $content;
         }
 
-        $this->validate($request, $rules);
+        $this->validate($request, $rules, $messages);
 
         $data->save();
     }
