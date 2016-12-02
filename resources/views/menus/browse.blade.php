@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <div class="alert alert-info">
             <strong>如何使用:</strong>
-            <p>您可以在网站上任意位置 通过调用 <code>Menu::display('name')</code> 获取的每个设置的值 </p>
+            <p>您可以在网站上任意位置 通过调用 <code>Menu::display('name')</code> 获取每个设置的值 </p>
         </div>
     </div>
 
