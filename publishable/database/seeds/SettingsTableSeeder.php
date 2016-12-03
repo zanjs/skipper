@@ -33,7 +33,7 @@ class SettingsTableSeeder extends Seeder
                 'order'        => 2,
             ],
             2 => [
-                'id'           => 2,
+                'id'           => 3,
                 'key'          => 'keyword',
                 'display_name' => '网站描述',
                 'value'        => 'Site Keyword',
@@ -42,7 +42,7 @@ class SettingsTableSeeder extends Seeder
                 'order'        => 3,
             ],
             3 => [
-                'id'           => 3,
+                'id'           => 4,
                 'key'          => 'logo',
                 'display_name' => '网站 Logo',
                 'value'        => '',
@@ -50,41 +50,41 @@ class SettingsTableSeeder extends Seeder
                 'type'         => 'image',
                 'order'        => 4,
             ],
-            3 => [
-                'id'           => 7,
+            4 => [
+                'id'           => 5,
                 'key'          => 'admin_bg_image',
                 'display_name' => 'Skipper 背景图片',
                 'value'        => '',
                 'details'      => '',
                 'type'         => 'image',
-                'order'        => 6,
+                'order'        => 5,
             ],
-            4 => [
-                'id'           => 8,
+            5 => [
+                'id'           => 6,
                 'key'          => 'admin_title',
                 'display_name' => 'Skipper 名称',
                 'value'        => 'Skipper',
                 'details'      => '',
                 'type'         => 'text',
-                'order'        => 4,
+                'order'        => 6,
             ],
-            5 => [
-                'id'           => 9,
+            6 => [
+                'id'           => 7,
                 'key'          => 'admin_description',
                 'display_name' => 'Skipper 描述',
                 'value'        => 'Welcome to Skipper. Let us explore together',
                 'details'      => '',
                 'type'         => 'text',
-                'order'        => 5,
+                'order'        => 7,
             ],
-            6 => [
-                'id'           => 10,
+            7 => [
+                'id'           => 8,
                 'key'          => 'google_analytics_client_id',
                 'display_name' => 'Google Analytics Client ID',
                 'value'        => '',
                 'details'      => '',
                 'type'         => 'text',
-                'order'        => 6,
+                'order'        => 8,
             ],
         ]);
     }
