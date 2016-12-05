@@ -23,8 +23,8 @@ Route::group(['middleware' => ['web', 'admin.user']], function () {
     // endforeach;
     // endif;
     try {
-        foreach (TCG\Voyager\Models\DataType::all() as $dataTypes):
-            Route::resource($dataTypes->slug, 'VoyagerBreadController');
+        foreach (Anla\Skipper\Models\DataType::all() as $dataTypes):
+            Route::resource($dataTypes->slug, 'SkipperBreadController');
         endforeach;
     }catch (\InvalidArgumentException $e) {
         throw new \InvalidArgumentException("Custom routes hasn't been configured because: ".$e->getMessage(), 1);   
