@@ -236,11 +236,15 @@
                 }
             });
             $('form').submit(function(){
+                
+                
                 $.each($('.fieldType'), function(){
-                     $(this).prop('disabled', 'false');
+                    
+                    $(this).prop('disabled', 'false');
+                    
                 })
-                 return true;
-            })
+                return true;
+            });
         });
 
         function newRow(kind, name, type, nullable, key, defaultValue) {

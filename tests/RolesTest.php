@@ -15,11 +15,10 @@ class RolesTest extends TestCase
     public function testRoles()
     {
         $this->visit(route('skipper.login'));
-        $this->type('z@z.com', 'email');
+        $this->type('admin@admin.com', 'email');
         $this->type('password', 'password');
         $this->press('Login Logging in');
         $this->seePageIs(route('skipper.dashboard'));
-
 
         // Adding a New Role
         $this->visit(route('roles.index'))->click('Add New')->seePageIs(route('roles.create'));

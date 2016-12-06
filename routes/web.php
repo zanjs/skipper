@@ -17,19 +17,13 @@ Route::group(['middleware' => ['web', 'admin.user']], function () {
         },
     ]);
 
-    // if (env('DB_CONNECTION') !== null && Schema::hasTable('data_types')):
-    //     foreach (Anla\Skipper\Models\DataType::all() as $dataTypes):
-    //         Route::resource($dataTypes->slug, 'SkipperBreadController');
-    // endforeach;
-    // endif;
     try {
         foreach (Anla\Skipper\Models\DataType::all() as $dataTypes):
             Route::resource($dataTypes->slug, 'SkipperBreadController');
         endforeach;
-    }catch (\InvalidArgumentException $e) {
-        throw new \InvalidArgumentException("Custom routes hasn't been configured because: ".$e->getMessage(), 1);   
-    }catch (\Exception $e) {
-        
+    } catch (\InvalidArgumentException $e) {
+        throw new \InvalidArgumentException("Custom routes hasn't been configured because: ".$e->getMessage(), 1);
+    } catch (\Exception $e) {
     }
 
     // Menu Routes

@@ -14,7 +14,7 @@
                     <i class="skipper-group"></i>
                     <?php $user_count = Anla\Skipper\Models\User::count(); ?>
                     <h4>{{ $user_count }} Users</h4>
-                    <p>{{ $user_count }} 个用户. 点击查看所有.</p>
+                    <p>You have {{ $user_count }} active users registered. Click on 'View All Users' to view all your current users.</p>
                     <a href="/{{ config('skipper.routes.prefix') }}/users" class="btn btn-primary">View All Users</a>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                     <i class="skipper-news"></i>
                     <?php $post_count = Anla\Skipper\Models\Post::count(); ?>
                     <h4>{{ $post_count }} Post(s)</h4>
-                    <p>{{ $post_count }} 篇文档. 点击查看所有.</p>
+                    <p>You have {{ $post_count }} Posts in your database. Click on 'View All Posts' below to view all posts.</p>
                     <a href="/{{ config('skipper.routes.prefix') }}/posts" class="btn btn-primary">View All Posts</a>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     <i class="skipper-file-text"></i>
                     <?php $page_count = Anla\Skipper\Models\Page::count(); ?>
                     <h4>{{ $page_count }} Page(s)</h4>
-                    <p>{{ $page_count }} 个页面. 点击查看所有.</p>
+                    <p>You have {{ $page_count }} Pages in your database. Click on 'View All Pages' below to view all pages.</p>
                     <a href="/{{ config('skipper.routes.prefix') }}/pages" class="btn btn-primary">View All Pages</a>
                 </div>
             </div>

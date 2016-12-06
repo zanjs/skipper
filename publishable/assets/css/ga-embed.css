@@ -2938,7 +2938,7 @@ limitations under the License.
 }
 
 .Header-auth .gapi-analytics-auth-styles-signinbutton-image:after {
-  content: 'Click here to authorize\00a0\00a0â†’';
+  content: 'Click here to authorize\00a0\00a0â†�?;
 }
 
 .Header-auth .gapi-analytics-auth-styles-signinbutton-buttonText,.Header-signOut {

@@ -6,7 +6,7 @@ class LoginTest extends TestCase
     public function testSuccessfulLoginWithDefaultCredentials()
     {
         $this->visit(route('skipper.login'));
-        $this->type('z@z.com', 'email');
+        $this->type('admin@admin.com', 'email');
         $this->type('password', 'password');
         $this->press('Login Logging in');
         $this->seePageIs(route('skipper.dashboard'));

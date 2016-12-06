@@ -11,7 +11,7 @@ class RouteTest extends TestCase
     public function testGetRoutes()
     {
         $this->visit(route('skipper.login'));
-        $this->type('z@z.com', 'email');
+        $this->type('admin@admin.com', 'email');
         $this->type('password', 'password');
         $this->press('Login Logging in');
 

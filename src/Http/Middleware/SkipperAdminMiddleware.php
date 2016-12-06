@@ -22,7 +22,7 @@ class SkipperAdminMiddleware
             return redirect()->route('skipper.login');
         }
 
-        /**
+        /*
          * Get the Skipper User Object.
          *
          * @var \Anla\Skipper\Models\User

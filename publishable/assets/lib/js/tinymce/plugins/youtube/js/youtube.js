@@ -21,11 +21,11 @@
 	//use Slider or inputfields
 	var slider = true;
 	//Set order
-    //date – Resources are sorted in reverse chronological order based on the date they were created.
-    //rating – Resources are sorted from highest to lowest rating.
-    //relevance – Resources are sorted based on their relevance to the search query. This is the default value for this parameter.
-    //title – Resources are sorted alphabetically by title.
-    //viewCount – Resources are sorted from highest to lowest number of views.
+    //date ?Resources are sorted in reverse chronological order based on the date they were created.
+    //rating ?Resources are sorted from highest to lowest rating.
+    //relevance ?Resources are sorted based on their relevance to the search query. This is the default value for this parameter.
+    //title ?Resources are sorted alphabetically by title.
+    //viewCount ?Resources are sorted from highest to lowest number of views.
 	var order = 'relevance';
     //Use suggest search words
     var suggest = true;

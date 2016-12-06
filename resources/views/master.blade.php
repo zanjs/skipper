@@ -118,10 +118,10 @@ $menuExpanded = isset($_COOKIE['expandedMenu']) && $_COOKIE['expandedMenu'] == 1
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="{{ route('skipper.profile') }}"><i class="skipper-person"></i> 简介</a>
+                                <a href="{{ route('skipper.profile') }}"><i class="skipper-person"></i> Profile</a>
                             </li>
                             <li>
-                                <a href="{{ route('skipper.logout') }}"><i class="skipper-power"></i> 退出</a>
+                                <a href="{{ route('skipper.logout') }}"><i class="skipper-power"></i> Logout</a>
                             </li>
                         </ul>
                     </li>
@@ -151,7 +151,7 @@ $menuExpanded = isset($_COOKIE['expandedMenu']) && $_COOKIE['expandedMenu'] == 1
                             <h4>{{ ucwords(Auth::user()->name) }}</h4>
                             <p>{{ Auth::user()->email }}</p>
 
-                            <a href="{{ route('skipper.profile') }}" class="btn btn-primary">简介</a>
+                            <a href="{{ route('skipper.profile') }}" class="btn btn-primary">Profile</a>
                             <div style="clear:both"></div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@ $menuExpanded = isset($_COOKIE['expandedMenu']) && $_COOKIE['expandedMenu'] == 1
                         <li class="dropdown">
                             <a data-toggle="collapse" href="#tools-dropdown-element">
                                 <span class="icon skipper-tools"></span>
-                                <span class="title">小工具</span>
+                                <span class="title">Tools</span>
                                 <span class="site-menu-arrow"></span>
                             </a>
 
@@ -171,13 +171,13 @@ $menuExpanded = isset($_COOKIE['expandedMenu']) && $_COOKIE['expandedMenu'] == 1
                                         <li>
                                             <a href="/{{config('skipper.routes.prefix')}}/menus">
                                                 <span class="icon skipper-list"></span>
-                                                <span class="title">菜单管理</span>
+                                                <span class="title">Menu Builder</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a class="animsition-link" href="{{ route('skipper.database') }}">
                                                 <span class="icon skipper-data"></span>
-                                                <span class="title">数据库</span>
+                                                <span class="title">Database</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -187,7 +187,7 @@ $menuExpanded = isset($_COOKIE['expandedMenu']) && $_COOKIE['expandedMenu'] == 1
                         <li>
                             <a href="{{ route('skipper.settings') }}">
                                 <span class="icon skipper-settings"></span>
-                                <span class="title">设置</span>
+                                <span class="title">Settings</span>
                             </a>
                         </li>
                     </ul>
@@ -207,10 +207,8 @@ $menuExpanded = isset($_COOKIE['expandedMenu']) && $_COOKIE['expandedMenu'] == 1
 </div>
 <footer class="app-footer">
     <div class="site-footer-right">
-        Design with <i class="skipper-heart"></i>
-         by <a href="http://zanjs.com" target="_blank">
-         Anla sheng
-         </a>
+        Made with <i class="skipper-heart"></i> by <a href="http://thecontrolgroup.com" target="_blank">The Control
+            Group</a>
     </div>
 </footer>
 <!-- Javascript Libs -->

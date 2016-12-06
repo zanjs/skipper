@@ -241,7 +241,14 @@ class SkipperBreadController extends Controller
             }
 
             $content = $this->getContentBasedOnType($request, $slug, $row);
-            
+            if ($content === null) {
+                if (isset($data->{$row->field})) {
+                    $content = $data->{$row->field};
+                }
+                if ($row->field == 'password') {
+                    $content = $data->{$row->field};
+                }
+            }
 
             $data->{$row->field} = $content;
         }

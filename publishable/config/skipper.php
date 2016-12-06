@@ -38,6 +38,7 @@ return [
     | Here you can specify skipper controller settings
     |
     */
+
     'controllers' => [
         'namespace' => 'Anla\\Skipper\\Http\\Controllers',
     ],
