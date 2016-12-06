@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="<?= csrf_token() ?>"/>
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Lato:300,400,700,900' rel='stylesheet'
-          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 
     <!-- CSS Libs -->
     <link rel="stylesheet" type="text/css" href="{{ config('skipper.assets_path') }}/lib/css/bootstrap.min.css">
@@ -207,8 +206,12 @@ $menuExpanded = isset($_COOKIE['expandedMenu']) && $_COOKIE['expandedMenu'] == 1
 </div>
 <footer class="app-footer">
     <div class="site-footer-right">
-        Made with <i class="skipper-heart"></i> by <a href="http://thecontrolgroup.com" target="_blank">The Control
-            Group</a>
+        Design with
+        <i class="skipper-heart"></i>
+         by
+        <a href="http://zanjs.com" target="_blank">
+         Anla sheng
+        </a>
     </div>
 </footer>
 <!-- Javascript Libs -->
